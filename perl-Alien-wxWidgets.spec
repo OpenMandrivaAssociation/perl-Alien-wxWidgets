@@ -13,6 +13,7 @@ URL:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/Alien/%{module}-%{version}.tar.gz
 Buildrequires:  perl(Module::Build)
 Buildrequires:  perl(Module::Pluggable)
+Buildrequires:  wxGTK-devel
 Buildarch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
