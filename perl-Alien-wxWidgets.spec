@@ -12,6 +12,7 @@ Group:          Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/Alien/%{module}-%{version}.tar.gz
 Buildrequires:  perl(Module::Build)
+Buildrequires:  perl(Module::Pluggable)
 Buildarch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
