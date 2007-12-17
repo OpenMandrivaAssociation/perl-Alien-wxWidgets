@@ -15,7 +15,6 @@ Buildrequires:  perl(Module::Build)
 Buildrequires:  perl(Module::Pluggable)
 Buildrequires:  wxGTK-devel
 Buildarch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 In short Alien::wxWidgets can be used to detect and get configuration settings
