@@ -14,7 +14,6 @@ Source:         http://www.cpan.org/modules/by-module/Alien/%{module}-%{version}
 Buildrequires:  perl(Module::Build)
 Buildrequires:  perl(Module::Pluggable)
 Buildrequires:  wxGTK-devel
-Buildarch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
