@@ -1,6 +1,6 @@
 %define module  Alien-wxWidgets
 %define name    perl-%{module}
-%define version 0.36
+%define version 0.37
 %define release %mkrel 1
 
 Name:           %{name}
