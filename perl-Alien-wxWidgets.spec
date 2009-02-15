@@ -1,7 +1,7 @@
 %define module  Alien-wxWidgets
 %define name    perl-%{module}
 %define version 0.42
-%define release %mkrel 2
+%define release %mkrel 3
 
 Name:           %{name}
 Version:        %{version}
@@ -14,7 +14,6 @@ Source:         http://www.cpan.org/modules/by-module/Alien/%{module}-%{version}
 Buildrequires:  perl(Module::Build)
 Buildrequires:  perl(Module::Pluggable)
 Buildrequires:  wxgtku2.8-devel
-Buildrequires:  wxGTK-devel
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
