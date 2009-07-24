@@ -1,16 +1,15 @@
-%define module  Alien-wxWidgets
-%define name    perl-%{module}
-%define version 0.43
-%define release %mkrel 2
+%define upstream_name    Alien-wxWidgets
+%define upstream_version 0.43
 
-Name:           %{name}
-Version:        %{version}
-Release:        %{release}
+Name:           perl-%{upstream_name}
+Version:        %perl_convert_version %{upstream_version}
+Release:        %mkrel 1
+
 Summary:        Building, finding and using wxWidgets binaries
-License:        GPL or Artistic
+License:        GPL+ or Artistic
 Group:          Development/Perl
-URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Alien/%{module}-%{version}.tar.gz
+URL:            http://search.cpan.org/dist/%{upstream_name}
+Source0:        http://www.cpan.org/modules/by-module/Alien/%{upstream_name}-%{upstream_version}.tar.gz
 Patch0:         Alien-wxWidgets-0.43-fix-wrong-libname.patch
 
 Buildrequires:  perl(Module::Build)
@@ -23,7 +22,7 @@ In short Alien::wxWidgets can be used to detect and get configuration settings
 from an installed wxWidgets.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 # fix bug 45256
 %patch0 -p0 -b .libname
 
