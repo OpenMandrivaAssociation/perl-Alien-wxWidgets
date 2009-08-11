@@ -1,5 +1,5 @@
 %define upstream_name    Alien-wxWidgets
-%define upstream_version 0.43
+%define upstream_version 0.44
 
 Name:           perl-%{upstream_name}
 Version:        %perl_convert_version %{upstream_version}
@@ -46,4 +46,3 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/Alien
 %{perl_vendorarch}/auto/Alien
 %{_mandir}/*/*
-
