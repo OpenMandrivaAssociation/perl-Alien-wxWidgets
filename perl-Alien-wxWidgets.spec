@@ -1,5 +1,5 @@
 %define upstream_name    Alien-wxWidgets
-%define upstream_version 0.47
+%define upstream_version 0.48
 
 Name:           perl-%{upstream_name}
 Version:        %perl_convert_version %{upstream_version}
