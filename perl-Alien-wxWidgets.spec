@@ -1,9 +1,9 @@
 %define upstream_name    Alien-wxWidgets
-%define upstream_version 0.51
+%define upstream_version 0.52
 
 Name:           perl-%{upstream_name}
 Version:        %perl_convert_version %{upstream_version}
-Release:        %mkrel 2
+Release:        %mkrel 1
 
 Summary:        Building, finding and using wxWidgets binaries
 License:        GPL+ or Artistic
@@ -44,5 +44,4 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc Changes README.txt
 %{perl_vendorarch}/Alien
-%{perl_vendorarch}/auto/Alien
 %{_mandir}/*/*
