@@ -1,0 +1,15 @@
+--- inc/My/Build/Any_wx_config.pm.orig	2009-07-24 17:28:11.000000000 +0200
++++ inc/My/Build/Any_wx_config.pm	2009-07-24 17:29:42.000000000 +0200
+@@ -138,7 +138,11 @@
+         if( @paths ) {
+             my $found = 0;
+             foreach my $path ( @paths ) {
+-                $found = 1 if -f File::Spec->catfile( $path, $v->{dll} );
++                my $path = File::Spec->catfile( $path, $v->{dll} );
++                next unless -f $path;
++                $found = 1;
++                $v->{dll} = readlink($path) if -l $path; # dereference symlinks
++                last;                                    # don't try any other path
+             }
+             unless( $found || $self->notes( 'build_wx' ) ) {
+                 if( grep $_ eq $k, @My::Build::Any_wx_config::CRITICAL ) {
