@@ -3,7 +3,7 @@
 
 Name:           perl-%{upstream_name}
 Version:        %perl_convert_version %{upstream_version}
-Release:	2
+Release:	3
 
 Summary:        Building, finding and using wxWidgets binaries
 License:        GPL+ or Artistic
@@ -15,7 +15,8 @@ Patch0:         Alien-wxWidgets-0.43-fix-wrong-libname.patch
 Buildrequires:  perl(Module::Build)
 Buildrequires:  perl(Module::Pluggable)
 Buildrequires:  wxgtku2.8-devel
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
+
+%define debug_package %{nil}
 
 %description
 In short Alien::wxWidgets can be used to detect and get configuration settings
