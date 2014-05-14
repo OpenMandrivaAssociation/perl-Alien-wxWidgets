@@ -14,9 +14,10 @@ URL:            http://search.cpan.org/dist/%{upstream_name}
 Source0:        http://www.cpan.org/modules/by-module/Alien/Alien-wxWidgets-0.64.tar.gz
 Patch0:         Alien-wxWidgets-0.43-fix-wrong-libname.patch
 
-Buildrequires:  perl(Module::Build)
-Buildrequires:  perl(Module::Pluggable)
-Buildrequires:  wxgtku2.8-devel
+BuildRequires:  perl(Module::Build)
+BuildRequires:  perl(Module::Pluggable)
+BuildRequires:  wxgtku2.8-devel
+BuildRequires:  perl(JSON::PP)
 
 %description
 In short Alien::wxWidgets can be used to detect and get configuration settings
