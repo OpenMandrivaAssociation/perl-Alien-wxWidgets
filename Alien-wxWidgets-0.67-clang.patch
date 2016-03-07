@@ -1,0 +1,11 @@
+--- Alien-wxWidgets-0.67/lib/Alien/wxWidgets/Utility.pm.orig	2016-03-07 22:26:02.039348514 +0000
++++ Alien-wxWidgets-0.67/lib/Alien/wxWidgets/Utility.pm	2016-03-07 22:26:14.077347744 +0000
+@@ -237,7 +237,7 @@
+     # the key already identifies the configuration
+     return %args if $args{key};
+ 
+-    my $cc = $ENV{CXX} || $ENV{CC} || $Config{ccname} || $Config{cc};
++    my $cc = "";
+     my $kind = awx_compiler_kind( $cc );
+     my $version = awx_cc_abi_version( $cc );
+ 

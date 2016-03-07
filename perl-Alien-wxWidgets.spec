@@ -14,6 +14,7 @@ Group:          Development/Perl
 URL:            http://search.cpan.org/dist/%{upstream_name}
 Source0:        http://www.cpan.org/modules/by-module/Alien/%{upstream_name}-%{upstream_version}.tar.gz
 Patch0:         Alien-wxWidgets-0.43-fix-wrong-libname.patch
+Patch1:		Alien-wxWidgets-0.67-clang.patch
 
 Buildrequires:  perl(Module::Build)
 Buildrequires:  perl(Module::Pluggable)
@@ -28,6 +29,8 @@ from an installed wxWidgets.
 %setup -q -n %{upstream_name}-%{upstream_version}
 # fix bug 45256
 %patch0 -p0 -b .libname
+# allow any compiler (due to clang/gcc mixture)
+%patch1 -p1 -b .clang
 
 %build
 %{__perl} Build.PL installdirs=vendor < /dev/null
