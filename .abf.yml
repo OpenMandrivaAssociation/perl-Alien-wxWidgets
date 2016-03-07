@@ -1,5 +1,2 @@
-removed_sources:
-  Alien-wxWidgets-0.52.tar.gz: 7a31e617a86008fb2f0bbc67659da000272b9a5c
-  Alien-wxWidgets-0.64.tar.gz: d095bb051e8c2bb43393c8f527dfb2fbcbf99866
 sources:
-  Alien-wxWidgets-0.65.tar.gz: a4f6c1881d3baca59e52347df0e6d8286924f810
+  Alien-wxWidgets-0.67.tar.gz: 16d27093b869266c0bad7f3a3208e91275719f5c

@@ -1,5 +1,5 @@
 %define upstream_name    Alien-wxWidgets
-%define upstream_version 0.65
+%define upstream_version 0.67
 
 %define debug_package %{nil}
 
@@ -17,7 +17,7 @@ Patch0:         Alien-wxWidgets-0.43-fix-wrong-libname.patch
 
 Buildrequires:  perl(Module::Build)
 Buildrequires:  perl(Module::Pluggable)
-Buildrequires:  wxgtku2.8-devel
+Buildrequires:  wxgtku3.0-devel
 BuildRequires:  perl(JSON::PP)
 
 %description
