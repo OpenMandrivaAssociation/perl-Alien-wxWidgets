@@ -5,7 +5,7 @@
 
 Name:           perl-%{upstream_name}
 Version:        %perl_convert_version %{upstream_version}
-Release:	3
+Release:	4
 
 Summary:        Building, finding and using wxWidgets binaries
 
@@ -18,7 +18,7 @@ Patch1:		Alien-wxWidgets-0.67-clang.patch
 
 Buildrequires:  perl(Module::Build)
 Buildrequires:  perl(Module::Pluggable)
-Buildrequires:  wxgtku3.0-devel
+Buildrequires:  wxgtku2.8-devel
 BuildRequires:  perl(JSON::PP)
 
 %description
