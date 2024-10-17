@@ -7,7 +7,7 @@ Release:	7
 Summary:	Building, finding and using wxWidgets binaries
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{upstream_name}
+URL:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Alien/%{upstream_name}-%{upstream_version}.tar.gz
 Patch0:		Alien-wxWidgets-0.43-fix-wrong-libname.patch
 Patch1:		Alien-wxWidgets-0.67-clang.patch
